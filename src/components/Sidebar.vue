@@ -4,8 +4,8 @@
       x
     </span>
     <ul>
-      <li class="list active">
-        <router-link to="/" @click="toggleSidebar">
+      <li class="list">
+        <router-link to="/" active-class="active" @click="toggleSidebar">
           <span class="icon">
             <ion-icon name="home-outline"></ion-icon>
           </span>
@@ -13,7 +13,7 @@
         </router-link>
       </li>
       <li class="list">
-        <router-link to="/about" @click="toggleSidebar">
+        <router-link to="/about" active-class="active" @click="toggleSidebar">
           <span class="icon">
             <ion-icon name="reader-outline"></ion-icon>
           </span>
@@ -102,6 +102,8 @@ export default {
 
 .sidebar ul .active {
   background: #6c63ff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .sidebar ul .list span {
@@ -117,7 +119,7 @@ export default {
   color: #fff;
 }
 
-.sidebar ul .active a::before {
+.sidebar ul li .active::before {
   content: '';
   position: absolute;
   top: -30px;
@@ -129,7 +131,7 @@ export default {
   box-shadow: -10px 15px 0 #6c63ff;
 }
 
-.sidebar ul .active a::after {
+.sidebar ul .active::after {
   content: '';
   position: absolute;
   bottom: -30px;
