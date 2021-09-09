@@ -21,12 +21,12 @@
         </router-link>
       </li>
       <li class="list">
-        <a href="#">
+        <router-link to="/works" active-class="active" @click="toggleSidebar">
           <span class="icon">
             <ion-icon name="laptop-outline"></ion-icon>
           </span>
           <span class="title">My Works</span>
-        </a>
+        </router-link>
       </li>
       <li class="list">
         <a href="#">

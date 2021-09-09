@@ -48,7 +48,7 @@
 
 <style>
 .about-card {
-  padding: 100px 50px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
