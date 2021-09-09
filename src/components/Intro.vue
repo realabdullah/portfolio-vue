@@ -2,7 +2,8 @@
   <section>
     <div class="intro">
       <div class="one">
-        <img src="../assets/abdd.svg" class="pulse" alt="abd">
+        <!--<img src="../assets/abdd.svg" class="pulse" alt="abd">-->
+        <img src="../assets/avatar.svg" alt="avatar">
         <p>
           <span> &lt; </span>
             Welcome!
@@ -86,25 +87,36 @@ body {
 
 .one {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
-  
+
+.one img {
+  border: 3px solid #4187f6;
+  padding: 3px;
+  border-radius: 100%;
+  width: 120px;  
+  margin-left: 7px;
+  margin-bottom: 20px;
+}
+
 .pulse {
-  border: 3px solid #ffb800;
+  border: 3px solid #4187f6;
   padding: 3px;
   border-radius: 100%;
   width: 56px;
   margin-right: 12px;
+  margin-bottom: 20px;
 }
   
-p {
+.one p {
   font-family: 'Dancing Script', cursive;
   font-size: 1.8em;
   color: #fff;
 }
   
 span {
-  color: #ffb800;
+  color: #4187f6;
 }
 
 .blink {
@@ -127,12 +139,18 @@ span {
 button {
   padding: 10px 20px;
   color: #fff;
-  background: #1e1c1c;
+  background: #2b343b;
   border: none;
   border-radius: 3px;
   margin-top: 20px;
   margin-left: 10px;
   font-weight: 800;
+}
+
+button:hover {
+  background: #4187f6;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .socials {
