@@ -92,7 +92,7 @@ body {
 }
 
 .one img {
-  border: 3px solid #4187f6;
+  border: 3px solid #6c63ff;
   padding: 3px;
   border-radius: 100%;
   width: 120px;  
@@ -101,7 +101,7 @@ body {
 }
 
 .pulse {
-  border: 3px solid #4187f6;
+  border: 3px solid #6c63ff;
   padding: 3px;
   border-radius: 100%;
   width: 56px;
@@ -116,7 +116,7 @@ body {
 }
   
 span {
-  color: #4187f6;
+  color: #6c63ff;
 }
 
 .blink {
@@ -148,7 +148,7 @@ button {
 }
 
 button:hover {
-  background: #4187f6;
+  background: #6c63ff;
   cursor: pointer;
   transition: 0.5s ease;
 }

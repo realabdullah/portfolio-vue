@@ -1,24 +1,24 @@
 <template>
   <div v-if="!collapsed" class="sidebar" :style="{ width: sidebarWidth }">
-    <!--<span v-if="!collapsed" class="collapse-icon" @click="toggleSidebar">
-      open
-    </span> -->
+    <span v-if="!collapsed" class="collapse-icon" @click="toggleSidebar">
+      x
+    </span>
     <ul>
       <li class="list active">
-        <a href="#">
+        <router-link to="/" @click="toggleSidebar">
           <span class="icon">
             <ion-icon name="home-outline"></ion-icon>
           </span>
           <span class="title">Home</span>
-        </a>
+        </router-link>
       </li>
       <li class="list">
-        <a href="#">
+        <router-link to="/about" @click="toggleSidebar">
           <span class="icon">
             <ion-icon name="reader-outline"></ion-icon>
           </span>
           <span class="title">About Me</span>
-        </a>
+        </router-link>
       </li>
       <li class="list">
         <a href="#">
@@ -56,6 +56,21 @@ export default {
 </script>
 
 <style>
+.collapse-icon {
+  padding: 7px;
+  color: #fff;
+  background: #6c63ff;
+  border: none;
+  border-radius: 3px;
+  font-weight: 800;
+  width: 22px;
+  height: 37px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
 .sidebar {
   color: #fff;
   background-color: #2b343b;
@@ -69,7 +84,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0 0 0 10px #4187f6;
+  box-shadow: 0 0 0 10px #6c63ff;
   border-right: 10px solid #2b343b;
 }
 
@@ -86,7 +101,7 @@ export default {
 }
 
 .sidebar ul .active {
-  background: #4187f6;
+  background: #6c63ff;
 }
 
 .sidebar ul .list span {
@@ -111,7 +126,7 @@ export default {
   height: 30px;
   background: #2b343b;
   border-radius: 50%;
-  box-shadow: -10px 15px 0 #4187f6;
+  box-shadow: -10px 15px 0 #6c63ff;
 }
 
 .sidebar ul .active a::after {
@@ -123,7 +138,7 @@ export default {
   height: 30px;
   background: #2b343b;
   border-radius: 50%;
-  box-shadow: -10px -15px 0 #4187f6;
+  box-shadow: -10px -15px 0 #6c63ff;
 }
 
 .sidebar ul li a .icon {
