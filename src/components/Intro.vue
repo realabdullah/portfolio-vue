@@ -32,7 +32,7 @@
           </a>
         </li>
       </div>
-      <button>
+      <button @click="toggleSidebar">
         Explore
       </button>
     </div>
@@ -40,11 +40,19 @@
 </template>
 
 <script>
-import VTypical from 'vue-typical';
+import VTypical from 'vue-typical'
+import { collapsed, toggleSidebar, sidebarWidth } from './state'
 
 export default {
   components: {
     VTypical
+  },
+  setup() {
+    return {
+      collapsed,
+      toggleSidebar,
+      sidebarWidth
+    }
   }
 }
 </script>
