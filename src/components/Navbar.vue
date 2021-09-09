@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="nav-one">
-      <router-link to="/" active-class="active" @click="toggleSidebar">
+      <router-link to="/" active-class="active">
         <img src="../assets/avatar.svg" alt="avatar">
         <p>
           <span> &lt; </span>
