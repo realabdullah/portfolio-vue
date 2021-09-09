@@ -1,12 +1,14 @@
 <template>
   <nav>
     <div class="nav-one">
-      <img src="../assets/avatar.svg" alt="avatar">
-      <p>
-        <span> &lt; </span>
-          Abdullahi
-        <span>/></span>
-      </p>
+      <router-link to="/" active-class="active" @click="toggleSidebar">
+        <img src="../assets/avatar.svg" alt="avatar">
+        <p>
+          <span> &lt; </span>
+            Abdullahi
+          <span>/></span>
+        </p>
+      </router-link>
     </div>
     <div @click="toggleSidebar" class="nav-two">
       <div></div>
@@ -40,13 +42,14 @@ nav {
   padding: 30px;
 }
 
-.nav-one {
+.nav-one a {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nav-one img {
+.nav-one a img {
   border: 3px solid #6c63ff;
   padding: 3px;
   border-radius: 100%;
@@ -54,13 +57,13 @@ nav {
   margin-right: 9px;
 }
 
-.nav-one p {
+.nav-one a p {
   font-family: 'Dancing Script', cursive;
   font-size: 1.8em;
   color: #fff;
 }
   
-.nav-one span {
+.nav-one a span {
   color: #6c63ff;
 }
 
