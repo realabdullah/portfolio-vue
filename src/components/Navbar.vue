@@ -50,7 +50,7 @@ nav {
 }
 
 .nav-one a img {
-  border: 3px solid #6c63ff;
+  border: 3px solid #777778;
   padding: 3px;
   border-radius: 100%;
   width: 40px;  
@@ -64,7 +64,7 @@ nav {
 }
   
 .nav-one a span {
-  color: #6c63ff;
+  color: #777778;
 }
 
 .nav-two {

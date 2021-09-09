@@ -59,7 +59,7 @@ export default {
 .collapse-icon {
   padding: 7px;
   color: #fff;
-  background: #6c63ff;
+  background: #777778;
   border: none;
   border-radius: 3px;
   font-weight: 800;
@@ -73,7 +73,7 @@ export default {
 
 .sidebar {
   color: #fff;
-  background-color: #2b343b;
+  background-color: #101011;
   float: left;
   position: fixed;
   z-index: 1;
@@ -84,7 +84,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0 0 0 10px #6c63ff;
+  box-shadow: 0 0 0 10px #777778;
   border-right: 10px solid #2b343b;
 }
 
@@ -101,7 +101,7 @@ export default {
 }
 
 .sidebar ul .active {
-  background: #6c63ff;
+  background: #777778;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -126,9 +126,9 @@ export default {
   left: 0;
   width: 30px;
   height: 30px;
-  background: #2b343b;
+  background: #101011;
   border-radius: 50%;
-  box-shadow: -10px 15px 0 #6c63ff;
+  box-shadow: -10px 15px 0 #777778;
 }
 
 .sidebar ul .active::after {
@@ -138,9 +138,9 @@ export default {
   left: 0;
   width: 30px;
   height: 30px;
-  background: #2b343b;
+  background: #101011;
   border-radius: 50%;
-  box-shadow: -10px -15px 0 #6c63ff;
+  box-shadow: -10px -15px 0 #777778;
 }
 
 .sidebar ul li a .icon {

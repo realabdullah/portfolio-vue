@@ -3,7 +3,7 @@
     <div class="intro">
       <div class="one">
         <!--<img src="../assets/abdd.svg" class="pulse" alt="abd">-->
-        <img src="../assets/avatar.svg" alt="avatar">
+        <img src="../assets/AvatarMaker.svg" alt="avatar">
         <p>
           <span> &lt; </span>
             Welcome!
@@ -70,7 +70,7 @@ export default {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #02030d;
+  background-color: #101011;
   color: #fff;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .one img {
-  border: 3px solid #6c63ff;
+  border: 3px solid #777778;
   padding: 3px;
   border-radius: 100%;
   width: 120px;  
@@ -101,7 +101,7 @@ body {
 }
 
 .pulse {
-  border: 3px solid #6c63ff;
+  border: 3px solid #777778;
   padding: 3px;
   border-radius: 100%;
   width: 56px;
@@ -116,7 +116,7 @@ body {
 }
   
 span {
-  color: #6c63ff;
+  color: #777778;
 }
 
 .blink {
@@ -148,7 +148,7 @@ button {
 }
 
 button:hover {
-  background: #6c63ff;
+  background: #777778;
   cursor: pointer;
   transition: 0.5s ease;
 }
