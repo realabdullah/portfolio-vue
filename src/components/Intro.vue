@@ -3,7 +3,7 @@
     <div class="intro">
       <div class="one">
         <!--<img src="../assets/abdd.svg" class="pulse" alt="abd">-->
-        <img src="../assets/AvatarMaker.svg" alt="avatar">
+        <img src="../assets/abdvector.svg" alt="avatar">
         <p>
           <span> &lt; </span>
             Welcome!
@@ -33,16 +33,21 @@
           </a>
         </li>
       </div>
-      <button @click="toggleSidebar">
+      <button class="explore" @click="toggleSidebar">
         Explore
       </button>
+      <router-link to="/works" class="desk-explore" active-class="active">
+        <button @click="onDeskbar">
+          Explore
+        </button>
+      </router-link>
     </div>
   </section>
 </template>
 
 <script>
 import VTypical from 'vue-typical'
-import { collapsed, toggleSidebar, sidebarWidth } from './state'
+import { collapsed, toggleSidebar, onDeskbar, sidebarWidth, desktopNav } from './state'
 
 export default {
   components: {
@@ -52,7 +57,9 @@ export default {
     return {
       collapsed,
       toggleSidebar,
-      sidebarWidth
+      sidebarWidth,
+      desktopNav,
+      onDeskbar
     }
   }
 }
@@ -100,7 +107,8 @@ body {
   border: 3px solid #777778;
   padding: 3px;
   border-radius: 100%;
-  width: 120px;  
+  width: 100px;  
+  height: 100px;
   margin-left: 7px;
   margin-bottom: 20px;
 }
@@ -158,6 +166,10 @@ button:hover {
   transition: 0.5s ease;
 }
 
+.desk-explore {
+  display: none;
+}
+
 .socials {
   display: flex;
   align-items: center;
@@ -171,5 +183,32 @@ button:hover {
 
 .socials li img {
   width: 30px;
+}
+
+@media(min-width: 800px) {
+  .explore {
+    display: none;
+  }
+
+  .intro {
+    align-items: center;
+    padding: 0 70px;
+  }
+
+  .one {
+    align-items:  center;
+  }
+
+  .one img {
+    padding: 5px;
+    width: 200px;  
+    height: 200px;
+    margin-left: 2px;
+    margin-bottom: 40px;
+  }
+
+  .desk-explore {
+    display: block;
+  }
 }
 </style>

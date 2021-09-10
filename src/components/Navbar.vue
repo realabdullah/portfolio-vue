@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="nav-one">
-      <router-link to="/" active-class="active">
+      <router-link @click="toggledeskbar" to="/" active-class="active">
         <img src="../assets/AvatarMaker.svg" alt="avatar">
         <p>
           <span> &lt; </span>
@@ -19,14 +19,16 @@
 </template>
 
 <script>
-import { collapsed, toggleSidebar, sidebarWidth } from '../components/state'
+import { collapsed, toggleSidebar, sidebarWidth, toggledeskbar, desktopNav } from '../components/state'
 
 export default {
   setup() {
     return {
       collapsed,
       toggleSidebar,
-      sidebarWidth
+      sidebarWidth,
+      toggledeskbar,
+      desktopNav
     }
   }
 }
@@ -78,5 +80,11 @@ nav {
   height: 3px;
   background: #fff;
   margin: 3px 0;
+}
+
+@media(min-width: 800px) {
+  .nav-two {
+    display: none;
+  }
 }
 </style>

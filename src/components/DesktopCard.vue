@@ -1,5 +1,5 @@
 <template>
-  <ul class="tilesWrap">
+  <ul class="desk-tiles">
     <li>
       <h2>ChatAway</h2>
       <p>
@@ -95,16 +95,23 @@ export default {
 </script>
 
 <style>
-.tilesWrap {
+@media(max-width: 799px) {
+  .desk-tiles {
+    display: none;
+  }
+}
+.desk-tiles {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
   justify-content: center;
   padding: 20px 50px;
 }
 
-.tilesWrap li {
-	display: inline-block;
+.desk-tiles li {
+  display: inline-block;
   width: 100%;
   padding: 60px 40px;
   padding-bottom: 40px;
@@ -113,9 +120,10 @@ export default {
   border: 1px solid #252727;
   text-align: left;
   border-radius: 3px;
+  flex: 1;
 }
 
-.tilesWrap p {
+.desk-tiles p {
   margin: 20px 0;
 }
 
@@ -135,19 +143,4 @@ export default {
 .links a ion-icon {
   font-size: 1.8em;
 }
-
-@media(min-width: 700px) {
-  .tilesWrap {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-  }
-
-  .tilesWrap li {
-    flex: 1;
-  }
-}  
 </style>
