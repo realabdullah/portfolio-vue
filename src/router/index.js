@@ -5,17 +5,29 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      enterClass: 'animate__animated animate__fadeInUp',
+      leaveClass: 'fade-leave'
+    }
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/About.vue')
+    component: () => import('../views/About.vue'),
+    meta: {
+      enterClass: 'animate__animated animate__fadeInUp',
+      leaveClass: 'fade-leave'
+    }
   },
   {
     path: '/works',
     name: 'Works',
-    component: () => import('../views/Works.vue')
+    component: () => import('../views/Works.vue'),
+    meta: {
+      enterClass: 'animate__animated animate__fadeInUp',
+      leaveClass: 'fade-leave'
+    }
   }
 ]
 

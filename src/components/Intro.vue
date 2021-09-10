@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="ppage">
     <div class="intro">
       <div class="one">
         <!--<img src="../assets/abdd.svg" class="pulse" alt="abd">-->
@@ -80,9 +80,14 @@ body {
 
 .intro {
   padding: 0 30px;
-  position: absolute;
+  /*position: absolute;
   top: 50%;
-  transform: translate(0, -50%)
+  transform: translate(0, -50%)*/
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .one {

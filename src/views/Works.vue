@@ -1,7 +1,9 @@
 <template>
-  <Navbar />
-  <Sidebar />
-  <WorkCard />
+  <div class="page">
+    <Navbar />
+    <Sidebar />
+    <WorkCard />
+  </div>
 </template>
 
 <script>

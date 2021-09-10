@@ -1,7 +1,9 @@
 <template>
-  <Navbar />
-  <AboutCard />
-  <Sidebar />
+  <div class="page">
+    <Navbar />
+    <AboutCard />
+    <Sidebar />
+  </div>
 </template>
 
 <script>
