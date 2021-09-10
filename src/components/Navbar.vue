@@ -2,7 +2,7 @@
   <nav>
     <div class="nav-one">
       <router-link to="/" active-class="active">
-        <img src="../assets/avatar.svg" alt="avatar">
+        <img src="../assets/AvatarMaker.svg" alt="avatar">
         <p>
           <span> &lt; </span>
             Abdullahi
