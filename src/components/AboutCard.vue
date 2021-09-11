@@ -101,6 +101,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .card0 {
@@ -151,6 +152,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px 0;
+  padding-bottom: 10px
 }
 
 .experience p {
