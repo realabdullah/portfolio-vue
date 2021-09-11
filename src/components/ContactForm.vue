@@ -70,6 +70,7 @@ export default {
 .container {
   flex: 0 1 700px;
   margin: auto;
+  margin-top: 25px;
   padding: 10px;
 }
 
