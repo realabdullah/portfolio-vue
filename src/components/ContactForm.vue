@@ -76,7 +76,7 @@ export default {
 .screen {
   position: relative;
   background: #101011;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .screen:after {
@@ -97,8 +97,8 @@ export default {
   align-items: center;
   padding: 10px 20px;
   background: #777778;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .screen-header-left {
@@ -173,7 +173,7 @@ export default {
 
 .app-contact {
   margin-top: auto;
-  font-size: 8px;
+  font-size: 13px;
   color: #ffffff;
 }
 
@@ -236,7 +236,7 @@ export default {
   margin-top: 20px;
   color: #ffffff;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
+  font-size:8px;
   font-weight: normal;
 }
 
