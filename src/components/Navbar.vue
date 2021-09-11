@@ -2,7 +2,7 @@
   <nav>
     <div class="nav-one">
       <router-link @click="toggledeskbar" to="/" active-class="active">
-        <img src="../assets/AvatarMaker.svg" alt="avatar">
+        <img src="../assets/abdvector.svg" alt="avatar">
         <p>
           <span> &lt; </span>
             Abdullahi

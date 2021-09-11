@@ -94,7 +94,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 0 0 10px #777778;
-    border-right: 10px solid #777778;
+    border-right: 10px solid #101011;
   }
 
   .sidebar:hover {

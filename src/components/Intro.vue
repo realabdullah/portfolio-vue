@@ -3,7 +3,7 @@
     <div class="intro">
       <div class="one">
         <!--<img src="../assets/abdd.svg" class="pulse" alt="abd">-->
-        <img src="../assets/abdvector.svg" alt="avatar">
+        <img src="../assets/abdvector.svg" alt="abdavatar">
         <p>
           <span> &lt; </span>
             Welcome!
