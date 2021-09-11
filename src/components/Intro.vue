@@ -28,7 +28,7 @@
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/RealAbd__">
+          <a href="https://www.linkedin.com/in/odesanmiabdullahi">
             <img src="../assets/linkedin.svg" alt="linkedin">
           </a>
         </li>
