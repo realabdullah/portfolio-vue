@@ -28,6 +28,15 @@ const routes = [
       enterClass: 'animate__animated animate__fadeInUp',
       leaveClass: 'fade-leave'
     }
+  },
+  {
+    path: '/contact-me',
+    name: 'Contact',
+    component: () => import('../views/Contact.vue'),
+    meta: {
+      enterClass: 'animate__animated animate__fadeInUp',
+      leaveClass: 'fade-leave'
+    }
   }
 ]
 

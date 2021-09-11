@@ -26,12 +26,12 @@
         </router-link>
       </li>
       <li class="list">
-        <a href="#">
+        <router-link to="/contact-me" active-class="active">
           <span class="icon">
             <ion-icon name="chatbubbles-outline"></ion-icon>
           </span>
           <span class="title">Contact Me</span>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
