@@ -29,7 +29,7 @@
         </router-link>
       </li>
       <li class="list">
-        <router-link to="/contact-me" active-class="active">
+        <router-link to="/contact-me" active-class="active" @click="toggleSidebar">
           <span class="icon">
             <ion-icon name="chatbubbles-outline"></ion-icon>
           </span>
