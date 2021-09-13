@@ -2,18 +2,6 @@
   <div class="background">
   <div class="container">
     <div class="screen">
-      <div class="screen-header">
-        <div class="screen-header-left">
-          <div class="screen-header-button close"></div>
-          <div class="screen-header-button maximize"></div>
-          <div class="screen-header-button minimize"></div>
-        </div>
-        <div class="screen-header-right">
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-        </div>
-      </div>
       <div class="screen-body">
         <div class="screen-body-item left">
           <div class="app-title">
@@ -24,36 +12,66 @@
         </div>
         <div class="screen-body-item">
           <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME" required>
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL" required>
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE" required>
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
-            </div>
-          </div>
+            <form @submit.prevent="sendMessage">
+              <div class="app-form-group">
+                <input name="name" type="text" class="app-form-control" v-model="name" placeholder="NAME" required>
+              </div>
+              <div class="app-form-group">
+                <input name="email" type="email" class="app-form-control" v-model="email" placeholder="EMAIL" required>
+              </div>
+              <div class="app-form-group message">
+                <input name="message" type="text" class="app-form-control" v-model="message" placeholder="MESSAGE" required>
+              </div>
+              <div class="app-form-group buttons">
+                <button v-if="sent" class="app-form-button">SENT!</button>
+                <button type="submit" class="app-form-button">SEND</button>
+              </div>
+            </form>
+          </div>          
         </div>
       </div>
-    </div>
-    <div class="credits">
-      Contact form by 
-      <a class="credits-link" href="https://codepen.io/krisantuswanandi" target="_blank">
-        Krisantus
-      </a>
     </div>
   </div>
 </div>
 </template>
 
 <script>
-export default {
+import emailjs from 'emailjs-com'
+import { ref } from 'vue'
 
+export default {
+  setup() {
+    const name = ref('')
+    const email = ref('')
+    const message = ref('')
+    const sent = ref(false)
+
+    const sendMessage = (e) => {
+      try {
+        emailjs.sendForm('default_service', 'template_bsg36as', e.target,
+        'user_oEXcnOFMlOUu07GMCbX3x', {
+          name: name.value,
+          email: email.value,
+          message: message.value
+        })
+        sent.value = true
+      } catch(error) {
+          console.log({error})
+      }
+      // Reset form field
+      name.value = '',
+      email.value = '',
+      message.value = ''
+    }
+
+    return {
+      name,
+      email,
+      message,
+      sent,
+      sendMessage
+    }
+  }
 }
 </script>
 
@@ -75,65 +93,6 @@ export default {
   position: relative;
   background: #101011;
   border-radius: 5px;
-}
-
-.screen:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-  z-index: -1;
-}
-
-.screen-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background: #777778;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.screen-header-left {
-  margin-right: auto;
-}
-
-.screen-header-button {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 3px;
-  border-radius: 8px;
-  background: white;
-}
-
-.screen-header-button.close {
-  background: #101011;
-}
-
-.screen-header-button.maximize {
-  background: #999;
-}
-
-.screen-header-button.minimize {
-  background: #fffff0;
-}
-
-.screen-header-right {
-  display: flex;
-}
-
-.screen-header-ellipsis {
-  width: 3px;
-  height: 3px;
-  margin-left: 2px;
-  border-radius: 8px;
-  background: #999;
 }
 
 .screen-body {
@@ -225,32 +184,6 @@ export default {
 
 .app-form-button:hover {
   color: #777778;
-}
-
-.credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #ffffff;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size:8px;
-  font-weight: normal;
-}
-
-.credits-link {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-.dribbble {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
 }
 
 @media screen and (max-width: 520px) {
