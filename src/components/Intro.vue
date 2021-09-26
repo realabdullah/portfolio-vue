@@ -1,6 +1,6 @@
 <template>
   <section class="ppage">
-    <div class="intro">
+    <div class="intro hero">
       <div class="one">
         <!--<img src="../assets/abdd.svg" class="pulse" alt="abd">-->
         <img src="../assets/abdvector.svg" alt="abdavatar">
@@ -41,6 +41,12 @@
           Explore
         </button>
       </router-link>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
     </div>
   </section>
 </template>
@@ -95,6 +101,7 @@ body {
   align-items: baseline;
   justify-content: center;
   min-height: 100vh;
+  z-index: 1;
 }
 
 .one {
@@ -185,6 +192,57 @@ button:hover {
   width: 30px;
 }
 
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #777778;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+  z-index: -99;
+}
+ .cube:nth-child(2n) {
+  border-color: #777778;
+}
+ .cube:nth-child(2) {
+  animation-delay: 0.3s;
+  left: 25vw;
+  top: 40vh;
+}
+ .cube:nth-child(3) {
+  animation-delay: 0.4s;
+  left: 75vw;
+  top: 50vh;
+}
+ .cube:nth-child(4) {
+  animation-delay: 0.6s;
+  left: 90vw;
+  top: 10vh;
+}
+ .cube:nth-child(5) {
+  animation-delay: 0.8s;
+  left: 10vw;
+  top: 85vh;
+}
+ .cube:nth-child(6) {
+  animation-delay: 1s;
+  left: 50vw;
+  top: 10vh;
+}
+ @keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+	}
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+	}
+}
+
 @media(min-width: 800px) {
   .explore {
     display: none;
@@ -193,6 +251,11 @@ button:hover {
   .intro {
     align-items: center;
     padding: 0 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
   .one {
