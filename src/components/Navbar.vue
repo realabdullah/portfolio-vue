@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="nav-one">
-      <router-link @click="toggledeskbar" to="/" active-class="active">
+      <router-link to="/" active-class="active">
         <img src="../assets/abdvector.svg" alt="avatar">
         <p>
           <span> &lt; </span>
@@ -17,22 +17,22 @@
     <div class="wrapper">
       <ul>
         <li>
-          <router-link to="/" active-class="active" @click="toggleSidebar">
+          <router-link to="/" active-class="active">
             Home
           </router-link>
         </li>
         <li>
-          <router-link to="/about" active-class="active" @click="toggleSidebar">
+          <router-link to="/about">
             About Me
           </router-link>
         </li>
         <li>
-          <router-link to="/works" active-class="active" @click="toggleSidebar">
+          <router-link to="/works" active-class="active">
             My Works
           </router-link>
         </li>
         <li>
-          <router-link to="/contact-me" active-class="active" @click="toggleSidebar">
+          <router-link to="/contact-me" active-class="active">
             Contact Me
           </router-link>
         </li>
@@ -41,22 +41,22 @@
     <div class="navbar">
       <ul>
         <li>
-          <router-link to="/" active-class="active" @click="toggleSidebar">
+          <router-link to="/" active-class="active">
             Home
           </router-link>
         </li>
         <li>
-          <router-link to="/about" active-class="active" @click="toggleSidebar">
+          <router-link to="/about" active-class="active">
             About Me
           </router-link>
         </li>
         <li>
-          <router-link to="/works" active-class="active" @click="toggleSidebar">
+          <router-link to="/works" active-class="active">
             My Works
           </router-link>
         </li>
         <li>
-          <router-link to="/contact-me" active-class="active" @click="toggleSidebar">
+          <router-link to="/contact-me" active-class="active">
             Contact Me
           </router-link>
         </li>
@@ -66,18 +66,8 @@
 </template>
 
 <script>
-import { collapsed, toggleSidebar, sidebarWidth, toggledeskbar, desktopNav } from '../components/state'
 
 export default {
-  setup() {
-    return {
-      collapsed,
-      toggleSidebar,
-      sidebarWidth,
-      toggledeskbar,
-      desktopNav
-    }
-  }
 }
 </script>
 

@@ -6,22 +6,22 @@
   <div class="wrapper">
     <ul>
       <li>
-        <router-link to="/" active-class="active" @click="toggleSidebar">
+        <router-link to="/" active-class="active">
           Home
         </router-link>
       </li>
       <li>
-        <router-link to="/about" active-class="active" @click="toggleSidebar">
+        <router-link to="/about" active-class="active">
           About Me
         </router-link>
       </li>
       <li>
-        <router-link to="/works" active-class="active" @click="toggleSidebar">
+        <router-link to="/works" active-class="active">
           My Works
         </router-link>
       </li>
       <li>
-        <router-link to="/contact-me" active-class="active" @click="toggleSidebar">
+        <router-link to="/contact-me" active-class="active">
           Contact Me
         </router-link>
       </li>
