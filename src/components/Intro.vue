@@ -105,7 +105,7 @@ body {
   padding: 0 30px;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%)
+  transform: translate(0, -50%);
   /* display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -274,7 +274,6 @@ button:hover {
   position: absolute;
   content: "";
   background: #fff;
-  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
   width: 104%;
   height: 110%;
   left: -2%;
