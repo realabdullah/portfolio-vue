@@ -10,10 +10,33 @@
         </p>
       </router-link>
     </div>
-    <div @click="toggleSidebar" class="nav-two">
-      <div></div>
-      <div></div>
-      <div></div>
+    <input type="checkbox" class="menu" id="active">
+    <label for="active" class="menu-btn menu">
+      <i class="fas fa-bars"></i>
+    </label>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <router-link to="/" active-class="active" @click="toggleSidebar">
+            Home
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/about" active-class="active" @click="toggleSidebar">
+            About Me
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/works" active-class="active" @click="toggleSidebar">
+            My Works
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/contact-me" active-class="active" @click="toggleSidebar">
+            Contact Me
+          </router-link>
+        </li>
+      </ul>
     </div>
     <div class="navbar">
       <ul>

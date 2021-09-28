@@ -1,15 +1,30 @@
 <template>
-  <input type="checkbox" id="active">
-  <label for="active" class="menu-btn">
+  <input type="checkbox" class="menu" id="active">
+  <label for="active" class="menu-btn menu">
     <i class="fas fa-bars"></i>
   </label>
   <div class="wrapper">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Feedback</a></li>
+      <li>
+        <router-link to="/" active-class="active" @click="toggleSidebar">
+          Home
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/about" active-class="active" @click="toggleSidebar">
+          About Me
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/works" active-class="active" @click="toggleSidebar">
+          My Works
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/contact-me" active-class="active" @click="toggleSidebar">
+          Contact Me
+        </router-link>
+      </li>
     </ul>
   </div>
   <section class="ppage">
@@ -46,11 +61,8 @@
           </a>
         </li>
       </div>
-      <button class="explore" @click="toggleSidebar">
-        Explore
-      </button>
       <router-link to="/works" class="desk-explore" active-class="active">
-        <button @click="onDeskbar">
+        <button>
           Explore
         </button>
       </router-link>
@@ -60,20 +72,10 @@
 
 <script>
 import VTypical from 'vue-typical'
-import { collapsed, toggleSidebar, onDeskbar, sidebarWidth, desktopNav } from './state'
 
 export default {
   components: {
     VTypical
-  },
-  setup() {
-    return {
-      collapsed,
-      toggleSidebar,
-      sidebarWidth,
-      desktopNav,
-      onDeskbar
-    }
   }
 }
 </script>
@@ -96,6 +98,7 @@ body {
 
 .section {
   position: relative;
+  z-index: -1;
 }
 
 .intro {
@@ -204,22 +207,22 @@ button:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
- /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
   background: #000;
-  clip-path: circle(25px at calc(100% - 45px) 45px);
+  clip-path: circle(0px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
+  z-index: 2;
+  text-align: center;
 }
+
 #active:checked ~ .wrapper{
   clip-path: circle(75%);
+  text-align: center;
 }
+
 .menu-btn{
   position: absolute;
   z-index: 2;
   right: 20px;
-  /* left: 20px; */
   top: 20px;
   height: 50px;
   width: 50px;
@@ -229,18 +232,18 @@ button:hover {
   font-size: 20px;
   color: #fff;
   cursor: pointer;
-  /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
- /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
-  background: #000;
   transition: all 0.3s ease-in-out;
 }
+
 #active:checked ~ .menu-btn{
   color: #fff;
+  z-index: 3;
 }
+
 #active:checked ~ .menu-btn i:before{
   content: "\f00d";
 }
+
 .wrapper ul{
   position: absolute;
   top: 50%;
@@ -249,9 +252,12 @@ button:hover {
   list-style: none;
   text-align: center;
 }
+
 .wrapper ul li{
   margin: 15px 0;
+  text-align: center;
 }
+
 .wrapper ul li a{
   color: none;
   text-decoration: none;
@@ -259,39 +265,46 @@ button:hover {
   font-weight: 500;
   padding: 5px 30px;
   color: #fff;
-  border-radius: 50px;
   background: #000;
   position: relative;
   line-height: 50px;
   transition: all 0.3s ease;
+  text-align: center;
 }
+
 .wrapper ul li a:after{
   position: absolute;
   content: "";
   background: #fff;
    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-  /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
   width: 104%;
   height: 110%;
   left: -2%;
-  top: -5%; /* if the font is 'Oswald'*/
+  top: -5%;
   border-radius: 50px;
   transform: scaleY(0);
   z-index: -1;
   animation: rotate 1.5s linear infinite;
   transition: transform 0.3s ease;
 }
+
 .wrapper ul li a:hover:after{
   transform: scaleY(1);
 }
+
 .wrapper ul li a:hover{
   color: #fff;
 }
+
 input[type="checkbox"]{
   display: none;
 }
 
 @media(min-width: 800px) {
+  .menu {
+    display: none;
+  }
+
   .explore {
     display: none;
   }
