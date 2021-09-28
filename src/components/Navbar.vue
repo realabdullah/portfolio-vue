@@ -78,7 +78,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 60px;
+  padding: 30px;
 }
 
 .nav-one a {

@@ -224,8 +224,6 @@ button:hover {
   z-index: 2;
   right: 20px;
   top: 20px;
-  height: 50px;
-  width: 50px;
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
@@ -320,23 +318,14 @@ input[type="checkbox"]{
 
   .intro {
     padding: 0 70px;
-    /* transform: translate(0%, 25%);
     position: unset;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; */
-    position: absolute;
-    top: 50%;
-    transform: translate(50%, -50%);
+    margin-top: 300px;
+    transform: none;
     text-align: center;
-  }
-
-  .blink {
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .one {
@@ -349,10 +338,6 @@ input[type="checkbox"]{
     height: 200px;
     margin-left: 2px;
     margin-bottom: 40px;
-  }
-
-  .socials {
-    margin-top: 70px;
   }
 
   .desk-explore {
