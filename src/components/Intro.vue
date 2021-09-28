@@ -276,7 +276,7 @@ button:hover {
   position: absolute;
   content: "";
   background: #fff;
-   background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
   width: 104%;
   height: 110%;
   left: -2%;
@@ -298,6 +298,15 @@ button:hover {
 
 input[type="checkbox"]{
   display: none;
+}
+
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
 }
 
 @media(min-width: 800px) {
