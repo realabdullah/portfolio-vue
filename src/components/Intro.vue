@@ -317,9 +317,10 @@ input[type="checkbox"]{
   }
 
   .intro {
+    height: 100vh;
     padding: 0 70px;
     position: unset;
-    margin-top: 300px;
+    margin: auto;
     transform: none;
     text-align: center;
     display: flex;
