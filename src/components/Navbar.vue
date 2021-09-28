@@ -15,6 +15,30 @@
       <div></div>
       <div></div>
     </div>
+    <div class="navbar">
+      <ul>
+        <li>
+          <router-link to="/" active-class="active" @click="toggleSidebar">
+            Home
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/about" active-class="active" @click="toggleSidebar">
+            About Me
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/works" active-class="active" @click="toggleSidebar">
+            My Works
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/contact-me" active-class="active" @click="toggleSidebar">
+            Contact Me
+          </router-link>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 
@@ -41,7 +65,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 60px;
 }
 
 .nav-one a {
@@ -80,6 +104,27 @@ nav {
   height: 3px;
   background: #fff;
   margin: 3px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  margin-right: 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.active {
+  color: #777778;
+  border-bottom: 3px solid #777778;
 }
 
 @media(min-width: 800px) {

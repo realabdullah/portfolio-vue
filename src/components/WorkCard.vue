@@ -113,6 +113,19 @@ export default {
   border: 1px solid #252727;
   text-align: left;
   border-radius: 3px;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.tilesWrap li:hover {
+  background: #1c1e1f;
+  border-radius: 10px;
+  transition: .3s all ease-in-out;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .tilesWrap p {

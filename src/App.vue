@@ -9,29 +9,15 @@
       </transition>
     </router-view>
   </div>
-  <DesktopNav v-if="desktopNav" />
 </template>
 
 <script>
-import { desktopNav } from './components/state'
-import DesktopNav from '@/components/DesktopNav.vue'
 
 export default {
-  components: {
-    DesktopNav
-  },
-  setup() {
-    return { desktopNav }
-  }
 }
 </script>
 
 <style>
-@media(min-width: 800px) {
-  .page {
-      margin-right: 200px;
-  }
-}
 .page {
   position: relative;
   top: 5px;
