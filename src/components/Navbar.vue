@@ -22,7 +22,7 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/about">
+          <router-link to="/about" active-class="active">
             About Me
           </router-link>
         </li>
