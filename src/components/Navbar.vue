@@ -131,5 +131,15 @@ nav {
   .nav-two {
     display: none;
   }
+
+  .navbar {
+    display: flex;
+  }
+}
+
+@media(max-width: 799px) {
+  .navbar {
+    display: none;
+  }
 }
 </style>
