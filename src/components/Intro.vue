@@ -103,14 +103,14 @@ body {
 
 .intro {
   padding: 0 30px;
-  /*position: absolute;
+  position: absolute;
   top: 50%;
-  transform: translate(0, -50%)*/
-  display: flex;
+  transform: translate(0, -50%)
+  /* display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
 
 .one {
@@ -310,13 +310,24 @@ input[type="checkbox"]{
   }
 
   .intro {
-    align-items: center;
     padding: 0 70px;
+    /* transform: translate(0%, 25%);
+    position: unset;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    transform: translate(50%, -50%);
+    text-align: center;
+  }
+
+  .blink {
+    position: fixed;
   }
 
   .one {
@@ -329,6 +340,10 @@ input[type="checkbox"]{
     height: 200px;
     margin-left: 2px;
     margin-bottom: 40px;
+  }
+
+  .socials {
+    margin-top: 70px;
   }
 
   .desk-explore {
