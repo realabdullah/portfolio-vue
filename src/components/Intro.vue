@@ -1,8 +1,8 @@
 <template>
-  <input type="checkbox" class="menu" id="active">
   <label for="active" class="menu-btn menu">
     <i class="fas fa-bars"></i>
   </label>
+  <input type="checkbox" class="menu" id="active">
   <div class="wrapper">
     <ul>
       <li>
