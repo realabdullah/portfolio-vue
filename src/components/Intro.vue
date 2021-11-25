@@ -221,7 +221,7 @@ button:hover {
 
 .menu-btn{
   position: absolute;
-  z-index: 2;
+  z-index: 333;
   right: 20px;
   top: 20px;
   text-align: center;
