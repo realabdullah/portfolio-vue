@@ -44,6 +44,20 @@
       </div>
     </li>
     <li>
+      <h2>Shop Easy</h2>
+      <p>
+        An e-commerce website built with vueJs, Vuex, Composition API. The project uses an headless content management service, Supabase as backend.
+      </p>
+      <div class="links">
+        <a href="http://shop-easy.vercel.app/" target="_blank" rel="noopener">
+          <ion-icon name="link"></ion-icon>
+        </a>
+        <a href="https://github.com/realabdullah/shop-easy" target="_blank" rel="noopener">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
+    </li>
+    <li>
       <h2>URL Shortener</h2>
       <p>
         A web service that helps you shorten your elongated and messy links.
@@ -81,6 +95,20 @@
           <ion-icon name="link"></ion-icon>
         </a>
         <a href="https://github.com/realabdullah/ip-tracker" target="_blank" rel="noopener">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
+    </li>
+    <li>
+      <h2>Space Travel</h2>
+      <p>
+        A space travel website built using a custom design system. It is accessible to all, even users that uses screen reader. Built majorly with CSS and HTML with a sprinkle of JavaScript.
+      </p>
+      <div class="links">
+        <a href="http://space-tourism-beta.vercel.app/" target="_blank" rel="noopener">
+          <ion-icon name="link"></ion-icon>
+        </a>
+        <a href="https://github.com/realabdullah/space-tourism" target="_blank" rel="noopener">
           <ion-icon name="logo-github"></ion-icon>
         </a>
       </div>
