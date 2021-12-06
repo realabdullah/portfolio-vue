@@ -1,13 +1,14 @@
 <template>
   <div>
-    <router-view v-slot="{ Component, route }">
+    <!-- <router-view v-slot="{ Component, route }">
       <transition 
         :enter-active-class="route.meta.enterClass"
         :leave-active-class="route.meta.leaveClass"
         mode="out-in">
         <Component :is="Component" />
       </transition>
-    </router-view>
+    </router-view> -->
+    <router-view />
   </div>
 </template>
 

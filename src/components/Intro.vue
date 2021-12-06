@@ -1,8 +1,13 @@
 <template>
-  <label for="active" class="menu-btn menu">
-    <i class="fas fa-bars"></i>
-  </label>
   <input type="checkbox" class="menu" id="active">
+  <label for="active" class="menu-btn menu">
+    <div class="hamburger">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+    </div>
+  </label>
   <div class="wrapper">
     <ul>
       <li>
@@ -40,7 +45,7 @@
       </div>
       <v-typical
         class="blink"
-        :steps="['I am Abdullahi. 👋', 1000, 'I am a frontend developer. 😇', 500, 'I love writing codes. ✍️', 1000]"
+        :steps="['Abdullahi here. 👋', 1000, 'I am a frontend developer. 😇', 500, 'I love writing codes. ✍️', 1000]"
         :loop="Infinity"
         :wrapper="'h2'"
       ></v-typical>
@@ -51,7 +56,7 @@
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/RealAbd__">
+          <a href="https://twitter.com/_devabd">
             <img src="../assets/twitter.svg" alt="twitter">
           </a>
         </li>
@@ -106,11 +111,22 @@ body {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  animation: myAnim 2s ease 0s 1 normal forwards;
   /* display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
   min-height: 100vh; */
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .one {
@@ -127,6 +143,18 @@ body {
   height: 100px;
   margin-left: 7px;
   margin-bottom: 20px;
+  filter: drop-shadow(5px 5px 10px rgba(151, 147, 147, 0.178));
+  animation: imgrotate 1s ease 0s 1 normal forwards;
+}
+
+@keyframes imgrotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .pulse {
@@ -208,6 +236,7 @@ button:hover {
   height: 100%;
   width: 100%;
   background: #000;
+  backdrop-filter: blur(1.3rem);
   clip-path: circle(0px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
   z-index: 2;
@@ -219,18 +248,74 @@ button:hover {
   text-align: center;
 }
 
-.menu-btn{
-  position: absolute;
+.hamburger {
+  /* margin-left: auto; 
+  margin-right: 0; */
+  margin: 25px 23px 0 auto;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.hamburger div {
+  padding: 0;
+  height: 4px;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute; 
+}
+
+.one {
+  width: 1.8rem;
+  top: 0;
+}
+
+.two { 
+  width: 1.3rem; 
+  top: 13.5px;
+}
+
+.three { 
+  width: 1.3rem; 
+  top: 13.5px;
+  left: 0;
+}
+
+.four {
+  width: 1.8rem;
+  bottom: 0;
+}
+
+.menu-btn:hover div { 
+  width: 2.3rem;
+}
+
+.menu:checked + label > .hamburger > .one{
+  transform: rotate(45deg);
+  transform-origin: 5%;
+  width: 41px;
   z-index: 333;
-  right: 20px;
-  top: 20px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+}
+
+.menu:checked + label > .hamburger > .two {
+  transform: translateX(-40px);
+  background-color: transparent;
+  z-index: 333;
+}
+
+.menu:checked + label > .hamburger > .three {
+  transform: translateX(20px);
+  background-color: transparent;
+  z-index: 333;
+}
+
+.menu:checked + label > .hamburger > .four {
+  transform-origin: 5%;
+  transform: rotate(-45deg);
+  width: 41px;
+  z-index: 333;
 }
 
 #active:checked ~ .menu-btn{
@@ -259,13 +344,11 @@ button:hover {
 .wrapper ul li a{
   color: none;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 500;
-  padding: 5px 30px;
   color: #fff;
-  background: #000;
-  position: relative;
-  line-height: 50px;
+  /* position: relative; */
+  line-height: 3rem;
   transition: all 0.3s ease;
   text-align: center;
 }
