@@ -235,7 +235,7 @@ button:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #000;
+  background: hsl(0 0% 100% / 0.05);
   backdrop-filter: blur(1.3rem);
   clip-path: circle(0px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
