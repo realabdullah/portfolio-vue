@@ -39,7 +39,7 @@
       </ul>
     </div>
     <div class="navbar">
-      <ul>
+      <ul class="underline-indicators">
         <li>
           <router-link to="/" active-class="active">
             Home
@@ -126,18 +126,41 @@ nav {
   justify-content: space-between;
 }
 
+.underline-indicators > * {
+  cursor: pointer;
+  padding: var(--underline-gap, .5rem) 0;
+  border: 0;
+  border-bottom: .2rem solid hsl(0 0% 100% / 0);
+  background-color: transparent;
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+  border-color: hsl(0 0% 100% / 0.5);
+}
+
+.underline-indicators > .active,
+.underline-indicators > [aria-selected="true"] {
+  color: hsl(0 0% 100%  / 1);
+  border-color: hsl(0 0% 100%  / 1);
+}
+
 .navbar ul li {
-  margin-right: 15px;
+  margin-right: 2rem;
+  padding: var(--underline-gap, 1.5rem) 0;
 }
 
 .navbar ul li a {
+  letter-spacing: .05rem;
   color: #fff;
   text-decoration: none;
 }
 
 .active {
-  color: #777778;
-  border-bottom: 3px solid #777778;
+  padding: var(--underline-gap, 1.5rem) 0;
+  border: 0;
+  border-bottom: .2rem solid hsl(0 0% 100% / 0);
+  border-color: hsl(0 0% 100% / 0.5);
 }
 
 @media(min-width: 800px) {
@@ -147,6 +170,11 @@ nav {
 
   .navbar {
     display: flex;
+    gap: clamp(1.5rem, 5vw, 3.5rem);
+    background: hsl(0 0% 100% / 0.05);
+    backdrop-filter: blur(1.3rem);
+    padding-inline: clamp(3rem, 7vw, 7rem);
+    border-radius: 5px;
   }
 }
 
