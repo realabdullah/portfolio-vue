@@ -107,6 +107,17 @@
 <style scoped>
 .about-card {
   padding: 20px;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .dp img {
