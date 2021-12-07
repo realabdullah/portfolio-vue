@@ -111,11 +111,6 @@ body {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  /* display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
-  min-height: 100vh; */
 }
 
 .one {
@@ -341,21 +336,6 @@ button:hover {
   line-height: 3rem;
   transition: all 0.3s ease;
   text-align: center;
-}
-
-.wrapper ul li a:after{
-  position: absolute;
-  content: "";
-  background: #fff;
-  width: 104%;
-  height: 110%;
-  left: -2%;
-  top: -5%;
-  border-radius: 50px;
-  transform: scaleY(0);
-  z-index: -1;
-  animation: rotate 1.5s linear infinite;
-  transition: transform 0.3s ease;
 }
 
 .wrapper ul li a:hover:after{

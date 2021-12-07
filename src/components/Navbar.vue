@@ -11,7 +11,12 @@
     </div>
     <input type="checkbox" class="menu" id="active">
     <label for="active" class="menu-btn menu">
-      <i class="fas fa-bars"></i>
+      <div class="hamburger">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+      </div>
     </label>
     <div class="wrapper">
       <ul>
