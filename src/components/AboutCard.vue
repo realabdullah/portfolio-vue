@@ -88,20 +88,6 @@
       <p class="s">I'm a <span>frontend web developer</span> with over 3 years experience. Skilled in using <span>JavaScript</span>, <span>VueJs</span>, <span>CSS3</span>, <span>Firebase</span>, <span>Supabase</span>, and other required technologies to deliver an amazing result.</p>
       <p>I'm always delighted to take up a challenge and also to build softwares that actually solve problems and will be of use to people.</p>
     </div>
-    <div class="featured">
-      <h4>Featured</h4>
-      <div class="images">
-        <div class="img-card">
-          <img src="../assets/abdava.png" alt="abd">
-        </div>
-        <div class="img-card">
-          <img src="../assets/abdava.png" alt="abd">
-        </div>
-        <div class="img-card">
-          <img src="../assets/abdava.png" alt="abd">
-        </div>
-      </div>
-    </div>
     <div class="education">
       <h4>Education</h4>
       <div class="ed-s">
@@ -152,6 +138,20 @@
         <div class="link">
           <p>Email</p>
           <a href="#">abdulodesanmi@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="featured">
+      <h4>Featured</h4>
+      <div class="images">
+        <div class="img-card">
+          <img src="../assets/aaa.jpg" alt="abd">
+        </div>
+        <div class="img-card">
+          <img src="../assets/ddd.jpg" alt="abd">
+        </div>
+        <div class="img-card">
+          <img src="../assets/pxl.jpg" alt="abd">
         </div>
       </div>
     </div>
