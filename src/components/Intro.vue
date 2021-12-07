@@ -111,24 +111,11 @@ body {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  animation: myAnim 2s ease 0s 1 normal forwards;
   /* display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
   min-height: 100vh; */
-}
-
-@keyframes myAnim {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    /* transform: scale(1); */
-    top: 50%;
-    transform: scale(1), translate(0, -50%);
-  }
 }
 
 .one {
@@ -412,7 +399,20 @@ input[type="checkbox"]{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: myAnim 2s ease 0s 1 normal forwards;
   }
+
+  @keyframes myAnim {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    /* transform: scale(1); */
+    top: 50%;
+    transform: scale(1), translate(0, -50%);
+  }
+}
 
   .one {
     align-items:  center;

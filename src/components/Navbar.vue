@@ -2,7 +2,6 @@
   <nav>
     <div class="nav-one">
       <router-link to="/" active-class="active">
-        <img src="../assets/abdvector.svg" alt="avatar">
         <p>
           <span> &lt; </span>
             Abdullahi
@@ -78,7 +77,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
 }
 
 .nav-one a {
