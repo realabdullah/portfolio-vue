@@ -249,7 +249,7 @@ button:hover {
   background-color: #ffffff;
   display: block;
   border-radius: 4px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
   position: absolute; 
 }
 
