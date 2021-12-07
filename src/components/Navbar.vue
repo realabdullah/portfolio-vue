@@ -160,13 +160,6 @@ nav {
   text-decoration: none;
 }
 
-.active {
-  padding: var(--underline-gap, 1.5rem) 0;
-  border: 0;
-  border-bottom: .2rem solid hsl(0 0% 100% / 0);
-  border-color: hsl(0 0% 100% / 0.5);
-}
-
 @media(min-width: 800px) {
   .nav-two {
     display: none;
@@ -183,16 +176,23 @@ nav {
   }
 
   @keyframes myAnim {
-  0% {
-    opacity: 0;
-    transform: translateX(250px);
+    0% {
+      opacity: 0;
+      transform: translateX(250px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+  .active {
+    padding: var(--underline-gap, 1.5rem) 0;
+    border: 0;
+    border-bottom: .2rem solid hsl(0 0% 100% / 0);
+    border-color: hsl(0 0% 100% / 0.5);
   }
-}
 }
 
 @media(max-width: 799px) {

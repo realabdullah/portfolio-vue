@@ -356,6 +356,15 @@ input[type="checkbox"]{
   }
 }
 
+@media (max-width: 800px) {
+  .active {
+    padding: var(--underline-gap, .5rem) 0;
+    border: 0;
+    border-bottom: 0.2rem solid hsl(0 0% 100% / 0);
+    border-color: hsl(0 0% 100% / 0.5);
+}
+}
+
 @media(min-width: 800px) {
   .menu {
     display: none;
