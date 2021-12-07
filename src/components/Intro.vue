@@ -125,7 +125,9 @@ body {
   }
 
   100% {
-    transform: scale(1);
+    /* transform: scale(1); */
+    top: 50%;
+    transform: scale(1), translate(0, -50%);
   }
 }
 
