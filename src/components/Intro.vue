@@ -1,7 +1,7 @@
 <template>
   <input type="checkbox" class="menu" id="active">
   <label for="active" class="menu-btn menu">
-    <div class="hamburger">
+    <div class="hamburger int">
       <div class="one"></div>
       <div class="two"></div>
       <div class="three"></div>
@@ -237,6 +237,10 @@ button:hover {
   width: 30px;
   height: 30px;
   position: relative;
+}
+
+.int {
+  margin: 25px 23px 0 auto;
 }
 
 .hamburger div {
