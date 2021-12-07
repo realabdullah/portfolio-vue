@@ -145,6 +145,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .experience {

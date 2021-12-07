@@ -80,6 +80,17 @@ export default {
   display: flex;
   min-height: 100vh;
   justify-content: flex-start;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .container {

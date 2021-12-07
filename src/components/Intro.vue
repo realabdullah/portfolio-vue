@@ -169,6 +169,7 @@ body {
 }
   
 .one p {
+  display: flex;
   font-family: 'Dancing Script', cursive;
   font-size: 1.8em;
   color: #fff;

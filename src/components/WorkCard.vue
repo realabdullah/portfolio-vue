@@ -129,6 +129,17 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 20px 50px;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .tilesWrap li {

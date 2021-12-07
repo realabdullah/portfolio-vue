@@ -175,7 +175,20 @@ nav {
     backdrop-filter: blur(1.3rem);
     padding-inline: clamp(3rem, 7vw, 7rem);
     border-radius: 5px;
+    animation: myAnim 1s ease 0s 1 normal forwards;
   }
+
+  @keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 }
 
 @media(max-width: 799px) {
