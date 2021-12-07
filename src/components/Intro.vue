@@ -234,9 +234,6 @@ button:hover {
 }
 
 .hamburger {
-  /* margin-left: auto; 
-  margin-right: 0; */
-  margin: 25px 23px 0 auto;
   width: 30px;
   height: 30px;
   position: relative;
