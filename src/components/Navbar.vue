@@ -12,7 +12,7 @@
     <input type="checkbox" class="menu" id="active">
     <label for="active" class="menu-btn menu">
       <div class="hamburger">
-        <div class="one"></div>
+        <div class="onee"></div>
         <div class="two"></div>
         <div class="three"></div>
         <div class="four"></div>

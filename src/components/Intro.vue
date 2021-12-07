@@ -2,7 +2,7 @@
   <input type="checkbox" class="menu" id="active">
   <label for="active" class="menu-btn menu">
     <div class="hamburger int">
-      <div class="one"></div>
+      <div class="onee"></div>
       <div class="two"></div>
       <div class="three"></div>
       <div class="four"></div>
@@ -245,7 +245,7 @@ button:hover {
 
 .hamburger div {
   padding: 0;
-  height: 4px;
+  height: 2px;
   background-color: #ffffff;
   display: block;
   border-radius: 4px;
@@ -253,35 +253,31 @@ button:hover {
   position: absolute; 
 }
 
-.one {
-  width: 1.8rem;
+.onee {
+  width: 1.5rem;
   top: 0;
 }
 
 .two { 
-  width: 1.3rem; 
-  top: 13.5px;
+  width: 1.2rem; 
+  top: 6.5px;
 }
 
 .three { 
-  width: 1.3rem; 
-  top: 13.5px;
+  width: 1.2rem; 
+  top: 6.5px;
   left: 0;
 }
 
 .four {
-  width: 1.8rem;
-  bottom: 0;
+  width: 1.5rem;
+  top: 0.9rem;
 }
 
-.menu-btn:hover div { 
-  width: 2.3rem;
-}
-
-.menu:checked + label > .hamburger > .one{
+.menu:checked + label > .hamburger > .onee{
   transform: rotate(45deg);
-  transform-origin: 5%;
-  width: 41px;
+  transform-origin: 10%;
+  width: 30px;
   z-index: 333;
 }
 
@@ -298,9 +294,9 @@ button:hover {
 }
 
 .menu:checked + label > .hamburger > .four {
-  transform-origin: 5%;
+  transform-origin: 20%;
   transform: rotate(-45deg);
-  width: 41px;
+  width: 30px;
   z-index: 333;
 }
 
