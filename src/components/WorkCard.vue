@@ -15,15 +15,43 @@
       </div>
     </li>
     <li>
-      <h2>Check-it</h2>
+      <h2>Shop Easy</h2>
       <p>
-        You've got couple of things to do? Use Check-it! and keep track of your todos. Created with VueJS.
+        An e-commerce website built with vueJs, Vuex, Composition API. The project uses an headless content management service, Supabase as backend.
       </p>
       <div class="links">
-        <a href="https://check-itt.netlify.app/" target="_blank" rel="noopener">
+        <a href="http://shop-easy.vercel.app/" target="_blank" rel="noopener">
           <ion-icon name="link"></ion-icon>
         </a>
-        <a href="https://github.com/realabdullah/todo-raw-vuefolder" target="_blank" rel="noopener">
+        <a href="https://github.com/realabdullah/shop-easy" target="_blank" rel="noopener">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
+    </li>
+    <li>
+      <h2>Anywhere in the world</h2>
+      <p>
+        A webapp that allows you to check information about countries. You can filter by region, search by name, toggle dark mode and also view more details about a country in a detailed page.
+      </p>
+      <div class="links">
+        <a href="https://rest-countries-api-wheat.vercel.app/" target="_blank" rel="noopener">
+          <ion-icon name="link"></ion-icon>
+        </a>
+        <a href="https://github.com/realabdullah/rest-countries-api" target="_blank" rel="noopener">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
+    </li>
+    <li>
+      <h2>Space Travel</h2>
+      <p>
+        A space travel website built using a custom design system. It is accessible to all, even users that uses screen reader. Built majorly with CSS and HTML with a sprinkle of JavaScript.
+      </p>
+      <div class="links">
+        <a href="http://space-tourism-beta.vercel.app/" target="_blank" rel="noopener">
+          <ion-icon name="link"></ion-icon>
+        </a>
+        <a href="https://github.com/realabdullah/space-tourism" target="_blank" rel="noopener">
           <ion-icon name="logo-github"></ion-icon>
         </a>
       </div>
@@ -44,20 +72,6 @@
       </div>
     </li>
     <li>
-      <h2>Shop Easy</h2>
-      <p>
-        An e-commerce website built with vueJs, Vuex, Composition API. The project uses an headless content management service, Supabase as backend.
-      </p>
-      <div class="links">
-        <a href="http://shop-easy.vercel.app/" target="_blank" rel="noopener">
-          <ion-icon name="link"></ion-icon>
-        </a>
-        <a href="https://github.com/realabdullah/shop-easy" target="_blank" rel="noopener">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-      </div>
-    </li>
-    <li>
       <h2>URL Shortener</h2>
       <p>
         A web service that helps you shorten your elongated and messy links.
@@ -72,6 +86,20 @@
       </div>
     </li>
     <li>
+      <h2>Check-it</h2>
+      <p>
+        You've got couple of things to do? Use Check-it! and keep track of your todos. Created with VueJS.
+      </p>
+      <div class="links">
+        <a href="https://check-itt.netlify.app/" target="_blank" rel="noopener">
+          <ion-icon name="link"></ion-icon>
+        </a>
+        <a href="https://github.com/realabdullah/todo-raw-vuefolder" target="_blank" rel="noopener">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
+    </li>
+    <li>
       <h2>IP Address Tracker</h2>
       <p>
         A webApp that provides you with details of your IP address such as location, Internet service provider and so on.
@@ -81,34 +109,6 @@
           <ion-icon name="link"></ion-icon>
         </a>
         <a href="https://github.com/realabdullah/ip-tracker" target="_blank" rel="noopener">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-      </div>
-    </li>
-    <li>
-      <h2>Network List</h2>
-      <p>
-        A webapp that takes inputs; Network names, address, host number, and subnetwork number, then stores them to a firebase realtime database and displays the populated database back out in a table format.
-      </p>
-      <div class="links">
-        <a href="https://network-registers.vercel.app/" target="_blank" rel="noopener">
-          <ion-icon name="link"></ion-icon>
-        </a>
-        <a href="https://github.com/realabdullah/ip-tracker" target="_blank" rel="noopener">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-      </div>
-    </li>
-    <li>
-      <h2>Space Travel</h2>
-      <p>
-        A space travel website built using a custom design system. It is accessible to all, even users that uses screen reader. Built majorly with CSS and HTML with a sprinkle of JavaScript.
-      </p>
-      <div class="links">
-        <a href="http://space-tourism-beta.vercel.app/" target="_blank" rel="noopener">
-          <ion-icon name="link"></ion-icon>
-        </a>
-        <a href="https://github.com/realabdullah/space-tourism" target="_blank" rel="noopener">
           <ion-icon name="logo-github"></ion-icon>
         </a>
       </div>
