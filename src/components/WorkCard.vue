@@ -3,7 +3,7 @@
     <li>
       <h2>ChatAway</h2>
       <p>
-        A chat room webApp developed with vueJs to connect and meet new people.
+        A chat room webApp with a cloned WhatsApp UI developed with vueJs to connect and meet new people.
       </p>
       <div class="links">
         <a href="https://chat-away-jet.vercel.app/" target="_blank" rel="noopener">
